@@ -3,175 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Олександр Ковальчук — Web Developer & UI/UX Designer</title>
+    <title>Максим Воронов — Креативний розробник & Дизайнер</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header">
-        <div class="container header-container">
-            <a href="#" class="logo">AK<span>.dev</span></a>
-            <nav class="nav">
-                <a href="#about" class="nav-link">Про мене</a>
-                <a href="#portfolio" class="nav-link">Портфоліо</a>
-                <a href="#skills" class="nav-link">Навички</a>
-            </nav>
-            <div class="header-actions">
-                <a href="#contacts" class="btn btn-secondary">Зв'язатися</a>
+    <header class="top-bar">
+        <div class="container top-bar-container">
+            <div class="status-indicator">
+                <span class="pulse-dot"></span>
+                <span>Доступний для проєктів</span>
             </div>
+            <a href="mailto:hello@voronov.design" class="top-email">hello@voronov.design</a>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <span class="badge">👨‍💻 Доступний для нових проєктів</span>
-                    <h1 class="hero-title">Створюю сучасні вебсайти та цифрові продукти</h1>
-                    <p class="hero-description">Привіт! Я Олександр — веброзробник та дизайнер. Допомагаю бізнесу та авторам запускати швидкі, зручні й привабливі сайти.</p>
-                    <div class="hero-actions">
-                        <a href="#portfolio" class="btn btn-primary">Переглянути роботи</a>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">GitHub</a>
+    <main class="main-wrapper">
+        <div class="container">
+            
+            <!-- Hero Section (Асиметричний макет) -->
+            <section class="hero-creative">
+                <div class="hero-left">
+                    <h1 class="hero-heading">Створюю цифровий досвід, який запам'ятовується.</h1>
+                    <p class="hero-sub">Привіт, я Максим. Поєдную інженерний код, мінімалістичний дизайн та інтерактивні інтерфейси для глобальних брендів.</p>
+                    <div class="hero-cta-group">
+                        <a href="#works" class="pill-btn pill-primary">Дивитися кейси ↓</a>
+                        <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="pill-btn pill-ghost">Telegram</a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="about" class="section section-alt">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-card">
-                        <div class="about-number">3+</div>
-                        <div class="about-label">Роки досвіду</div>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-number">25+</div>
-                        <div class="about-label">Успішних проєктів</div>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-number">100%</div>
-                        <div class="about-label">Дотримання дедлайнів</div>
+                <div class="hero-right">
+                    <div class="floating-badge-card">
+                        <span class="badge-num">04+</span>
+                        <span class="badge-txt">Роки фокуса на якість та деталі</span>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="portfolio" class="section">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Моє портфоліо</h2>
-                    <p>Добірка останніх реалізованих проєктів</p>
+            <!-- Блок робіт (Асиметрична сітка) -->
+            <section id="works" class="section-space">
+                <div class="section-header-inline">
+                    <h2>Вибрані кейси</h2>
+                    <span class="count-badge">(3)</span>
                 </div>
 
-                <div class="portfolio-grid">
-                    <article class="portfolio-card">
-                        <div class="portfolio-image" style="background-color: #2563eb;">
-                            <span class="project-tag">Web App</span>
+                <div class="masonry-grid">
+                    <article class="project-box project-large">
+                        <div class="project-preview bg-gradient-1">
+                            <span class="cat-tag">Fintech App</span>
                         </div>
-                        <div class="portfolio-content">
-                            <h3>Dashboard для аналітики</h3>
-                            <p>Інтерактивна панель керування даними з адаптивними графіками, темною темою та звітністю.</p>
-                            <div class="portfolio-tech">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                            </div>
+                        <div class="project-info">
+                            <h3>Nexus Banking Interface</h3>
+                            <p>Повний редизайн мобільного додатку для керування активами та інвестиціями в реальному часі.</p>
                         </div>
                     </article>
 
-                    <article class="portfolio-card">
-                        <div class="portfolio-image" style="background-color: #10b981;">
-                            <span class="project-tag">Landing Page</span>
+                    <article class="project-box">
+                        <div class="project-preview bg-gradient-2">
+                            <span class="cat-tag">E-Commerce</span>
                         </div>
-                        <div class="portfolio-content">
-                            <h3>Промо-сайт для IT-конференції</h3>
-                            <p>Сучасний промо-сайт із розкладом виступів, спікерами та можливістю купівлі квитків.</p>
-                            <div class="portfolio-tech">
-                                <span>HTML/CSS</span>
-                                <span>Responsive</span>
-                                <span>SEO</span>
-                            </div>
+                        <div class="project-info">
+                            <h3>Aura Minimal Store</h3>
+                            <p>Платформа для преміального бренду одягу з кастомною системою фільтрації.</p>
                         </div>
                     </article>
 
-                    <article class="portfolio-card">
-                        <div class="portfolio-image" style="background-color: #8b5cf6;">
-                            <span class="project-tag">E-Commerce</span>
+                    <article class="project-box">
+                        <div class="project-preview bg-gradient-3">
+                            <span class="cat-tag">Brand Identity</span>
                         </div>
-                        <div class="portfolio-content">
-                            <h3>Інтернет-магазин одягу</h3>
-                            <p>Зручний каталог товарів із фільтрацією, кошиком покупця та оптимізацією під мобільні пристрої.</p>
-                            <div class="portfolio-tech">
-                                <span>UI/UX Design</span>
-                                <span>Layout</span>
-                                <span>Grid/Flex</span>
-                            </div>
+                        <div class="project-info">
+                            <h3>Quantum AI Platform</h3>
+                            <p>Розробка дизайн-системи та лендингу для платформи штучного інтелекту.</p>
                         </div>
                     </article>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="skills" class="section section-alt">
-            <div class="container">
-                <div class="section-title">
-                    <h2>Технології та навички</h2>
-                    <p>Інструменти, які я використовував у роботі</p>
+            <!-- Секція експертизи (Горизонтальний ліст) -->
+            <section class="section-space">
+                <div class="section-header-inline">
+                    <h2>Експертиза</h2>
                 </div>
 
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">🎨</div>
-                        <h3>UI/UX Design</h3>
-                        <p>Прототипування, дизайн-системи, адаптивні сітки, Figma.</p>
+                <div class="expertise-list">
+                    <div class="exp-row">
+                        <span class="exp-index">01</span>
+                        <h3>Frontend Architecture</h3>
+                        <p>Чистий, модульний код, висока продуктивність та адаптивність під будь-які екрани.</p>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">⚡</div>
-                        <h3>Frontend Dev</h3>
-                        <p>Семантичний HTML5, чистий CSS3/SASS, ванільний JavaScript.</p>
+                    <div class="exp-row">
+                        <span class="exp-index">02</span>
+                        <h3>UI/UX & Prototyping</h3>
+                        <p>Інтуїтивні сценарії використання, проєктування інтерфейсів та інтерактивні прототипи.</p>
                     </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">📱</div>
-                        <h3>Mobile-First</h3>
-                        <p>Адаптивна верстка під будь-які роздільні здатності екранів.</p>
-                    </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">🚀</div>
-                        <h3>Оптимізація</h3>
-                        <p>Висока швидкість завантаження (Google PageSpeed), базове SEO.</p>
+                    <div class="exp-row">
+                        <span class="exp-index">03</span>
+                        <h3>Motion & Interaction</h3>
+                        <p>Плавні анімації, що оживляють інтерфейс та покращують взаємодію користувача з продуктом.</p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+
+        </div>
     </main>
 
-    <footer id="contacts" class="footer">
-        <div class="container footer-container">
-            <div class="footer-info">
-                <a href="#" class="logo">AK<span>.dev</span></a>
-                <p>Відкритий до співпраці над цікавими проєктами та задачами.</p>
+    <!-- Футер -->
+    <footer class="footer-minimal">
+        <div class="container footer-flex">
+            <div>
+                <h2>Давайте створимо щось унікальне разом.</h2>
+                <p>Відкритий до фриланс-проєктів та довгострокових колаборацій.</p>
             </div>
-            <div class="footer-contacts">
-                <h4>Контакти</h4>
-                <p>✉️ <a href="mailto:alex.koval@example.com">alex.koval@example.com</a></p>
-                <p>💬 <a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram: @alex_dev</a></p>
-            </div>
-            <div class="footer-socials">
-                <h4>Соцмережі</h4>
-                <div class="social-links">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn">GitHub</a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn">LinkedIn</a>
-                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer" class="social-btn">Telegram</a>
+            <div class="footer-links-col">
+                <a href="mailto:hello@voronov.design" class="footer-link-main">hello@voronov.design</a>
+                <div class="social-row">
+                    <a href="https://t.me/" target="_blank" rel="noopener noreferrer">Telegram</a>
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer">Dribbble</a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; 2026 Олександр Ковальчук. Усі права захищені.</p>
-            </div>
+        <div class="container footer-sub">
+            <p>&copy; 2026 Максим Воронов. Усі права захищені.</p>
         </div>
     </footer>
 
